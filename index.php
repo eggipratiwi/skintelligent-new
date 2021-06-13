@@ -11,12 +11,14 @@
     $url3   = $expl[$flag+4];
     $url4   = $expl[$flag+5];
     
+    echo"on login branch";
+    
     if(!isset($module)) $module = $expl[$flag+1];
-	
-	
+    
+    
     if(!isset($module)) $module = '';
-	
-	
+    
+    
     $smarty->assign('module', $module);
     $smarty->assign('url1', $url1);
     $smarty->assign('url2', $url2);
