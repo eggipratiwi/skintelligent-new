@@ -1,0 +1,12 @@
+
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [NE,L,R=301]
+
+<IfModule mod_rewrite.c> 
+
+RewriteCond $1 !^(index\.php|ajax\.php|favicon\.png|images|css|fonts|js|lib/securimage|zohoverify|assets|lib|reporting|seller-center)
+RewriteRule ^(.*)$ /index.php?/$1 [L]
+
+</IfModule>
+
