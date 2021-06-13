@@ -11,7 +11,7 @@
     $url3   = $expl[$flag+4];
     $url4   = $expl[$flag+5];
 
-    echo"on login branch";
+    echo"on login branch homepage";
     
     if(!isset($module)) $module = $expl[$flag+1];
 	
