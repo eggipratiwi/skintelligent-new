@@ -3,7 +3,7 @@
     session_start();
                 
     $expl = explode("/", strtolower($_SERVER["REQUEST_URI"]));
-    $flag =1;     
+    $flag =0;     
 
     $module = $_GET['module'];
     $url1   = $expl[$flag+2];
