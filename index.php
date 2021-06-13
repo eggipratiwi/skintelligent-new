@@ -10,6 +10,8 @@
     $url2   = $expl[$flag+3];
     $url3   = $expl[$flag+4];
     $url4   = $expl[$flag+5];
+
+    echo"on login branch homepage";
     
     echo"on login branch";
 
